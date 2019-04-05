@@ -1,0 +1,186 @@
+/*
+*
+*
+@Autor: Franciele Barros de Souza
+@Versão: 1.0
+@Data: 12/2017
+*
+*/
+
+/* Estilo geral*/
+body{
+	background: url('imagens/capa.jpg') no-repeat;
+}
+
+
+/*Barra de navegação*/
+
+.img-logo{
+	display: block;
+	width: 130px;
+	height: 40px;
+	background: url('imagens/logo.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+.nav-link{
+	padding: 15px;
+    font-size: 1.3em;
+    color: #fff;
+	font-weight: bold;
+	padding-right: 30px;
+}
+
+a.logo{
+	padding: 5px 15px;
+}
+
+.nav.superior{
+	background: darkblue;
+}
+
+
+.texto-capa{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 50px;
+	background: #2125294f;
+}
+
+/*Tipografia*/
+
+h1{
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.08em;
+
+}
+
+h2,h3{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+}
+
+
+
+.texto-azul >h3{
+	color: #40E0D0;
+}
+
+#rodape h4{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #D8D8D8;
+}
+
+.row{
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+
+/*Botões*/
+
+.btn-custom{
+	border-radius: 50px;
+	  -webkit-border-radius: 50px;
+	   -moz-border-radius: 50px;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0 15px;
+}
+
+.btn-roxo{
+	background : darkblue;
+	margin-top: 22px;
+}
+
+.btn-roxo:hover{
+	background : #6207e3;
+	color: #fff;
+	transition: background 0.8s;
+}
+
+.btn-branco{
+	border: 2px solid #fff;
+	background: transparent;
+}
+
+.btn-branco:hover{
+	background: #fff;
+	color: #000;
+	transition: background 0.8s;
+}
+
+/*Sessões*/
+#servicos,#recursos{
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#recursos{
+	background: none;
+	color: #fff;
+}
+
+.albuns{
+	margin-bottom: 20px;
+}
+
+.rotacionar{
+	transform: rotate(-20deg);
+	padding-left: 80px;
+}
+
+/*Rodapé*/
+footer{
+	background: #000;
+	padding: 50px 0 20px;
+	position: relative;
+}
+
+.nav{
+	font-size: 14px;
+}
+
+#rodape .redes-sociais{
+	float: right;
+}
+
+#rodape .redes-sociais>li{
+	display: inline-block;
+}
+
+
+@keyframes fadeInDown{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown h1, .fadeInDown h2{
+  animation-name: fadeInDown;
+}
+
+.animated h1, .animated h2{
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+
