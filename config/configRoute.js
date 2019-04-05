@@ -11,6 +11,17 @@ angular.module("aplicacaoEvento").config(function($routeProvider, $locationProvi
         
     });
 
+    $routeProvider.when("/listar", {
+        templateUrl: "./componentes/listar/listar.html"
+        
+    });
+
+    $routeProvider.when("/detalhes", {
+        templateUrl: "./componentes/detalhes/detalhes.html"
+        
+    });
+
+
     $routeProvider.otherwise({
         redirectTo : "/"
     });
