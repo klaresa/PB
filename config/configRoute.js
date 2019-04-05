@@ -7,7 +7,7 @@ angular.module("aplicacaoEvento").config(function($routeProvider, $locationProvi
     });
 
     $routeProvider.when("/home", {
-        templateUrl: "./index.html"
+        templateUrl: "./componentes/home/home.html"
         
     });
 
