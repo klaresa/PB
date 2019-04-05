@@ -1,1 +1,1 @@
-angular.module("aplicacaoEvento", [])
+angular.module("aplicacaoEvento", ['ngMessages','ngRoute'])
