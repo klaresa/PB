@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Apoio evento</title>
+
+    <!---icones-->
     <link rel="icon" href="lib/imagens/logo.ico">
 
     <!-- Bootstrap -->
@@ -17,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-messages.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular-route.js"></script>
 
+    <!--Scripts linkados-->
     <script src="app.js"></script>
     <script src="controllerApp.js"></script>
     <script src="config/configRoute.js"></script>
@@ -30,62 +32,21 @@
 
 </head>
 <body ng-controller="aplicacaoEventoCtrl">
+<div>
 
-<div class="container-fluid padding">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Entrar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!--HEADER--->
+<nav ng-include="'common/nav/nav.html'"></nav>
+<!--fim-HEADER--->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language
-                    </a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Portuguese</a>
-                        <a class="dropdown-item" href="views/eventos.html">English</a>
-                        <a class="dropdown-item" href="#">French</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-link selecionar">
-                    <form class="form-inline my-2 my-lg-0">
-                        <label for="servico"></label>
-                        <select class="form-control mr-sm-2" id="servico">
-                            <option>O que procura?</option>
-                            <option>Eventos</option>
-                            <option>Onde comer</option>
-                            <option>Onde dormir</option>
-                            <option>Praias</option>
-                            <option>Pontos turísticos</option>
-                            <option>Hospitais</option>
-                            <option>Banheiro público</option>
-                            <option>Delegacias</option>
-                        </select>
-                    </form>
-                </li>
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+
+<!--FOOOTERR--->
+<footer ng-include="'common/footer/footer.html'"></footer>
+<!--fim-FOOOTERR--->
 
 </div>
-
-
-<div ng-include="'common/footer/footer.html'"></div>
-
-</div><!--fim do contatiner-->
+<!--jquery-popper-bootstrap--->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
