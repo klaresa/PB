@@ -1,0 +1,42 @@
+
+*{
+    color: #555555;
+}
+.bg-greenish {
+    background: #CFEDCA;
+}
+.margin li {
+    margin-left: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+ul{
+    padding-left: 0;
+}
+.headline {
+    font-family: 'Quicksand', sans-serif;
+}
+.headline {
+    margin-top: 60px;
+}
+.white{
+    color: #ffffff;
+}
+.font-serif{
+    font-family: sans-serif;
+}
+
+.dropdown a:hover, i:hover{
+    color: #9fcdff;
+}
+
+.padding {
+    padding: 10px;
+}
+.selecionar{
+    padding: 0;
+    margin-left: 5px;
+}
+
+
+
