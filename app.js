@@ -1,5 +1,6 @@
 
-angular.module("aplicacaoEvento", ['ngMessages','ngRoute']).config(function($routeProvider) {
+angular.module("aplicacaoEvento", ['ngMessages','ngRoute'])
+    .config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
